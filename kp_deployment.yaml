@@ -1,0 +1,10 @@
+_BASE_: "Base-Keypoint-RCNN-FPN.yaml"
+MODEL:
+  ROI_KEYPOINT_HEAD:
+    NUM_KEYPOINTS: 7
+  WEIGHTS: "/home/ps/kp_deployment/models_output/model_final.pth"
+#  WEIGHTS: "/home/lyc/code/03_keypoint_1/models_input/model_trained.pth"
+#  WEIGHTS: "/home/ps/keypoint/models_output/model_0004799_0.05.pth"
+  RESNETS:
+    # DEPTH: 50
+    DEPTH: 50
